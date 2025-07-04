@@ -18,12 +18,24 @@ document.addEventListener('DOMContentLoaded', function() {
     uploadBox.addEventListener('click', () => fileInput.click());
     
     fileInput.addEventListener('change', handleFileSelect);
+
+    <script type="text/javascript">
+	atOptions = {
+		'key' : 'd3877aae0779c4c8ad68bbf48972d921',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//nodthunderthis.com/d3877aae0779c4c8ad68bbf48972d921/invoke.js"></script>
     
     // Drag and Drop functionality
     uploadBox.addEventListener('dragover', (e) => {
         e.preventDefault();
         uploadBox.classList.add('dragover');
     });
+<script type='text/javascript' src='//nodthunderthis.com/f9/68/99/f96899c24245178fcf54fca7a83304da.js'></script>
     
     uploadBox.addEventListener('dragleave', () => {
         uploadBox.classList.remove('dragover');
