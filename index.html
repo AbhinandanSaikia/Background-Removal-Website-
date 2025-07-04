@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Remover | Free AI-Powered Tool</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-magic"></i>
+                    <span>Background Remover</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Remove Backgrounds in Seconds</h1>
+                    <p class="subtitle">Free AI-powered background removal with perfect edges. No registration required.</p>
+                    <div class="upload-container">
+                        <div class="upload-box" id="uploadBox">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag & drop your image here or click to browse</p>
+                            <input type="file" id="fileInput" accept="image/*">
+                        </div>
+                        <div class="supported-formats">
+                            <span>Supports: JPG, PNG, WEBP (Max 10MB)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="result-section" id="resultSection" style="display: none;">
+            <div class="container">
+                <div class="result-container">
+                    <div class="image-preview">
+                        <h3>Original Image</h3>
+                        <div class="image-wrapper">
+                            <img id="originalImage" src="" alt="Original Image">
+                        </div>
+                    </div>
+                    <div class="image-preview">
+                        <h3>Result</h3>
+                        <div class="image-wrapper">
+                            <img id="resultImage" src="" alt="Result Image">
+                            <div class="loader" id="loader">
+                                <div class="spinner"></div>
+                                <p>Processing your image...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-options">
+                    <button class="btn btn-primary" id="downloadPngBtn">
+                        <i class="fas fa-download"></i> Download PNG
+                    </button>
+                    <button class="btn btn-outline" id="downloadJpgBtn">
+                        <i class="fas fa-download"></i> Download JPG
+                    </button>
+                    <button class="btn btn-outline" id="tryAnotherBtn">
+                        <i class="fas fa-redo"></i> Try Another Image
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <h2>Why Choose Our Background Remover</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Lightning Fast</h3>
+                        <p>Process images in seconds with our powerful AI technology. No waiting in queues.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Precision Edges</h3>
+                        <p>Get perfect cutouts every time, even with complex edges like hair and fur.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Secure Processing</h3>
+                        <p>Your images are processed securely and never stored permanently on our servers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Multiple Formats</h3>
+                        <p>Download your transparent images in PNG, JPG, or WEBP formats.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Upload Your Image</h3>
+                            <p>Drag and drop your image or click to browse files from your device.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>AI Processing</h3>
+                            <p>Our advanced AI automatically detects and removes the background.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Download Result</h3>
+                            <p>Download your image with transparent background in your preferred format.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="logo">
+                        <i class="fas fa-magic"></i>
+                        <span>Background Remover</span>
+                    </div>
+                    <p>Free AI-powered background removal tool. Fast, accurate, and easy to use.</p>
+                    <div class="social-links">
+                        <a href="https://x.com/10BGAMERYT"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/AbhinandanSaikia"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">API Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Background Remover. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
